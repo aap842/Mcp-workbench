@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>288</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLineEdit" name="LowEnergyEdit">
+   <property name="geometry">
+    <rect>
+     <x>191</x>
+     <y>51</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LowEnergy">
+   <property name="geometry">
+    <rect>
+     <x>71</x>
+     <y>51</y>
+     <width>115</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Lower energy limit [keV]</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="UppEnergy">
+   <property name="geometry">
+    <rect>
+     <x>71</x>
+     <y>79</y>
+     <width>115</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Upper energy limit [keV]</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="UppEnergyBox">
+   <property name="geometry">
+    <rect>
+     <x>191</x>
+     <y>77</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>152</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QCheckBox" name="RayleighBox">
+      <property name="text">
+       <string>Include rayleigh scattering</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="LogLogBox">
+      <property name="text">
+       <string>Log-log interpolation</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="EffectiveDoseBox">
+      <property name="text">
+       <string>Evaluate effective dose</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="ElectronBox">
+      <property name="text">
+       <string>Include electron transport</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>190</y>
+     <width>176</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QLabel" name="Accuracy">
+    <property name="text">
+     <string>accuracy</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="AccuracyEdit"/>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>391</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
