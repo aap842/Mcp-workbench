@@ -78,17 +78,26 @@ class MCPhotonsWorkbench(Workbench):
     def Initialize(self):
         "This function is executed when FreeCAD starts"
         print('this is initilize')
-        import PartGui
-        import Part
-        print(PartGui, Part)
-        print(dir(PartGui), '\n')
-        print(dir(Part), '\n')
+        # import PartGui
+        # import Part
+        # print(PartGui, Part)
+        # print(dir(PartGui), '\n')
+        # print(dir(Part), '\n')
+        import generalSettings
+        import elementsSettings
+        import geometrySettings
+        import incidentPhotonSettings
+        import multithreadingSettings
+        import randomNumberSettings
+        import saveSettings
+        import solveSettings
 
         # import MyModuleA, MyModuleB # import here all the needed files that create your FreeCAD commands
-        self.list = ["PartGui, Part"]  # A list of command names created in the line above
-        self.appendToolbar("My Commands", self.list)  # creates a new toolbar with your commands
-        self.appendMenu("My New Menu", self.list)  # creates a new menu
-        self.appendMenu(["An existing Menu", "My submenu"], self.list)  # appends a submenu to an existing menu
+        self.list = ['generalSettings', 'elementsSettings', 'geometrySettings', 'incidentPhotonSettings', 'multithreadingSettings', 'randomNumberSettings', 'saveSettings', 'solveSettings']  # A list of command names created in the line above
+        # self.appendToolbar("My Commands", self.list)  # creates a new toolbar with your commands
+        self.appendMenu("MCPhotons", self.list)  # creates a new menu
+
+        # self.appendMenu(["An existing Menu", "My submenu"], self.list)  # appends a submenu to an existing menu
 
     def Activated(self):
         "This function is executed when the workbench is activated"
