@@ -7,16 +7,12 @@ class MCPhotonsWorkbench(Workbench):
 
     MenuText = "MCPhotons"
     ToolTip = "A description of MCPhotons workbench"
+    from mcphotonslib import __dir__
     Icon = ":/MCPhotons/icons/MCPhotons.svg"
 
     def Initialize(self):
         "This function is executed when FreeCAD starts"
         print('this is initilize')
-        # import PartGui
-        # import Part
-        # print(PartGui, Part)
-        # print(dir(PartGui), '\n')
-        # print(dir(Part), '\n')
         import generalSettings
         import elementsSettings
         import geometrySettings

@@ -7,9 +7,6 @@ import xml.etree.ElementTree as xml
 
 class RandomNumberCommand:
     def Activated(self):
-        # pass
-        import PyQt4
-        from PyQt4 import QtGui
         import FreeCADGui
         w=FreeCADGui.PySideUic.loadUi(":/MCPhotons/ui/RandomNumberSettings.ui")
         w.show()

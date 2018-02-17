@@ -7,9 +7,6 @@ import xml.etree.ElementTree as xml
 
 class GeneralCommand:
     def Activated(self):
-        # pass
-        import PyQt4
-        from PyQt4 import QtGui
         import FreeCADGui
         from mcphotonslib import __dir__
         w=FreeCADGui.PySideUic.loadUi(":/MCPhotons/ui/GeneralSettings.ui")
@@ -20,7 +17,7 @@ class GeneralCommand:
         return {
             'Pixmap': '',
             'MenuText': msg,
-            'ToolTip': msg
+            'ToolTip': msg,
         }
 
 generalCommand = GeneralCommand()

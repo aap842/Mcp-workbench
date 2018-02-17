@@ -6,7 +6,7 @@ assert not os.path.exists(qrc_filename)
 
 qrc = '''<RCC version="1.0">
 	<qresource prefix="/MCPhotons">'''
-for fn in glob.glob('icons/*.svg') + glob.glob('icons/*.svg') + glob.glob('ui/*.ui'):
+for fn in glob.glob('icons/*.svg') + glob.glob('ui/*.ui'):
     qrc = qrc + '\n\t\t<file>%s</file>' % fn
 qrc = qrc + '''\n\t</qresource>
 </RCC>'''
