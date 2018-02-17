@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Incident Photon Settings</string>
   </property>
   <widget class="QLabel" name="Type">
    <property name="geometry">

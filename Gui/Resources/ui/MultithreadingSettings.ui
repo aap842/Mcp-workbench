@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Multithreading Settings</string>
   </property>
   <widget class="QRadioButton" name="AutomaticThread">
    <property name="geometry">

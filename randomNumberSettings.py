@@ -11,7 +11,7 @@ class RandomNumberCommand:
         import PyQt4
         from PyQt4 import QtGui
         import FreeCADGui
-        w=FreeCADGui.PySideUic.loadUi("/home/cis/.FreeCAD/Mod/MCPhotons/Gui/Resources/ui/RandomNumberSettings.ui")
+        w=FreeCADGui.PySideUic.loadUi(":/MCPhotons/ui/RandomNumberSettings.ui")
         w.show()
 
     def GetResources(self):

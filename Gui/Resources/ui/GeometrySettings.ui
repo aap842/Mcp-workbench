@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Geometry Settings</string>
   </property>
   <widget class="QRadioButton" name="Isotrop">
    <property name="geometry">

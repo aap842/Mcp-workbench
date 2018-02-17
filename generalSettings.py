@@ -11,7 +11,8 @@ class GeneralCommand:
         import PyQt4
         from PyQt4 import QtGui
         import FreeCADGui
-        w=FreeCADGui.PySideUic.loadUi("/home/cis/.FreeCAD/Mod/MCPhotons/Gui/Resources/ui/GeneralSettings.ui")
+        from mcphotonslib import __dir__
+        w=FreeCADGui.PySideUic.loadUi(":/MCPhotons/ui/GeneralSettings.ui")
         w.show()
 
     def GetResources(self):
